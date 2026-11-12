@@ -61,7 +61,7 @@ For each form of the feature, at its module path:
    - `from anvil import *` at the top, then the form class, with `self.init_components(**properties)` and then `translate_form(self)`;
    - every event the screen requirement uses, as `@handle("<component name>", "<event>")` above `def <component name>_<event>(self, **event_args):`, with the event exactly as the inventory names it, a body of `pass`, and a one-line docstring naming the server function the spec sheet gives it;
    - no other logic.
-3. `theme/assets/docs/app1/<package path>/<FormName>.md`, the spec sheet, with the six contents `spec-ui-standards` section 14.2 lists. It holds no secret, key, password or user data, because `theme/assets/` is public.
+3. `theme/assets/docs/app{n}/<package path>/<FormName>.md`, the spec sheet, with the six contents `spec-ui-standards` section 14.2 lists. It holds no secret, key, password or user data, because `theme/assets/` is public.
 4. The form's entry in `access-matrix.yaml` under `forms`, keyed by module path, with the scope of every role from the screen requirement.
 5. The form's phrase keys in `en.py`, each with the English text the screen requirement gives.
 
